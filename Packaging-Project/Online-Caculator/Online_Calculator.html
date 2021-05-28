@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- Practice with time and patience build a human, Oliyide Ibrahim -->
+<html lang='en'>
+<meta charset="UTF-8" />
+
+<head>
+    <title>
+        Online Calculator
+    </title>
+    <link href=\CSS\Packaging.css type="text/css" rel="stylesheet">
+</head>
+<!---------------------------------- THE HEADER OF THE PAGE---------------------------->
+<header>
+    <a href=\Index.html type="page/html" title="Home page">
+        <picture> <img class="logo" id="logo2" src=\Images\nlogo_0.png title="International Brewery Logo"> </picture>
+    </a>
+    <h2>The Packaging Department Of International Breweries. A subsidiary of AB-Inbev Group of Company</h2>
+    <nav id="top-menu" class="menu" role="navigation" aria-label="main-menu">
+        <ul id="wrap">
+            <li><a href=\Index.html type="page/html" title="Home page">
+         Home</a></li>
+            <li><a>Machines</a>
+                <ul>
+                    <li><a href=\Machines\Depalletizer-Machine.html target="-blank">Depalletizer</a></li>
+                    <li><a href=\Machines\Unpacker-Machine.html target="-blank">Unpacker</a></li>
+                    <li><a href=\Machines\Bottle-Washer_Machine.html target="-blank">Bottlewasher</a></li>
+                    <li><a href=\Machines\Empty-Bottle-Inspector_Machine.html target="-blank">Empty Bottle Inspector(EBI)</a></li>
+                    <li><a href=\Machines\Filler-Machine.html target="-blank">Filler</a></li>
+                    <li><a href=\Machines\Pasteurizer_Machine.html target="-blank">Pasteurizer</a></li>
+                    <li><a href=\Machines\Labeller_Label_Inspector_Coding_Machine.html target="-blank">Labeller</a></li>
+                    <li><a href=\Machines\Packer_Machine.html target="-blank">Packer</a></li>
+                    <li><a href=\Machines\Palletizer-Machine.html target="-blank">Palletizer</a></li>
+                </ul>
+            </li>
+            <li><a>Our Brands</a>
+                <ul>
+                    <a href=\Brands\Beta-Malt.html target="-blank">Beta Malt</a>
+                    <a href=\Brands\Budweiser.html target="-blank">Budweiser</a>
+                    <a href=\Brands\Grand-Malt.html target="-blank">Grand Malt</a>
+                    <a href=\Brands\Hero.html target="-blank">Hero</a>
+                    <a href=\Brands\Trophy.html target="-blank">Trophy</a>
+                </ul>
+            </li>
+            <li><a>Our KPIs</a>
+                <ul>
+                    <li>
+                        <a href=\Machines\Depalletizer-Machine.html target="-blank">Total Pack Oxgen(TPO) &#x2264;20 PPB</a>
+                    </li>
+                    <li>
+                        <a href=\Machines\Unpacker-Machine.html target="-blank">Water Usage Ratio(WUR) &#x2264;0.7hl/hl</a>
+                    </li>
+                    <li>
+                        <a href=\Machines\Bottle-Washer_Machine.html target="-blank">Brewery Service Level(BSL) &#x2264;1.0</a>
+                    </li>
+                    <li>
+                        <a href=\Machines\Empty-Bottle-Inspector_Machine.html target="-blank">Packaging Extract Loss(PEL) &#x2264;0.8%</a>
+                    </li>
+                    <li>
+                        <a href=\Machines\Filler-Machine.html target="-blank">Gross Line Yield(GLY) &#8805;83%</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a>Suppliers & Customers</a>
+                <ul>
+                    <a href=\Internal-Customers\Brew_House.html target="-blank">Brew House</a>
+                    <a href=\Internal-Customers\Logistics.html target="-blank">Logistics</a>
+                    <a href=\Internal-Customers\People.html target="-blank">People</a>
+                    <a href=\Internal-Customers\Procurement.html target="-blank">Procurement</a>
+                    <a href=\Internal-Customers\Technical_Services.html target="-blank">Technical Services</a>
+                </ul>
+            </li>
+            <li><a>VPO Tools</a>
+                <ul>
+                    <a href=\Internal-Customers\Brew_House.html target="-blank">5s</a>
+                    <a href=\Internal-Customers\Logistics.html target="-blank">ATO</a>
+                    <a href=\Internal-Customers\People.html target="-blank">SAM & LOTOTO</a>
+                    <a href=\Internal-Customers\Procurement.html target="-blank">Food Safety</a>
+                    <a href=\Internal-Customers\Technical_Services.html target="-blank">Problem Solving Tools</a>
+                </ul>
+            </li>
+            <li><a href=\Online-Caculator\Online_Calculator.html type="page/html" target="-blank">Online Calculator</a></li>
+        </ul>
+    </nav>
+</header>
+<!----------------------------------ONLINE CALCULAT0R--------------------------------------------------------->
+
+<body id="body">
+    <form id="form">
+        <p>Container Type:<input type="number" name="container-type" class="fill" id="container" placeholder="Select the bottles size" list="Size-of-bottle" required autofocus>ml </p>
+        <p>Target HL Drawn:<input type="number" name="container-type" id="drawn" class="fill" placeholder="Select the target hl drawn per hour" list="hl_drawn" required autofocus>ml </p>
+        <p>Start of the hour - Number of Bottles Filled(On the Counter): <input type="number" class="fill" id="filledStart" name="start" required>
+            <p>End of the hour - Number of Bottles Filled(On the Counter): <input type="number" id="filledEnd" class="fill" name="end" required> <br>
+                <p id="output" style="font-weight: bolder;"></p>
+                <p id="result"> </p>
+                <p id="result2"> </p>
+                <p id="result3"> </p>
+                <p id="result4"> </p>
+                <!------------------------------------------TEXTAREA----------------------------------------------------->
+                <label id="issues">Issues that causes the downtime in that hour run:</label><br>
+                <textarea id="textarea" name="Why-LEF-is-&lt;95%" rows="20" cols="70">
+</textarea>
+                <!------------------------------------------------BUTTONS--------------------------------------------------------->
+                <p> <input type="button" name="Calculate" value="Calculate" id="calculate" class="button">
+                    <input type="reset" name="Reset" value="Reset" class="button">
+                    <input type="submit" name="Submit" value="Submit" class="button">
+                </p>
+    </form>
+    <!------------------------------------------DATALIST---------------------------------------------------------->
+    <section>
+        <datalist id="Size-of-bottle">
+        <option value="600"></option>
+        <option value="375"></option>
+        <option value="330"></option>
+</datalist>
+        <datalist id="hl_drawn">
+    <option value="240"></option>
+    <option value="170"></option>
+</datalist>
+    </section>
+    <div>
+
+    </div>
+</body>
+<!---------------------------------------- THE FOOTER OF THE PAGE----------------------------------->
+<footer class="clear">
+    <div id="bottom">
+        &copy; 2020 International Breweries Pl. All rights reserved. Enjoy responsibly. Do not share this content with minors<br/>Developed by Oliyide Ibrahim Owolabi. All copyright and privacy reserved.
+        <a href="SITEMAP" target="-blank">SiteMap</a>
+        <a href="terms" target="-blank">Terms and Conditions</a>
+        <a href="privacy" target="-blank">Privacy and Cookies</a>
+    </div>
+</footer>
+<script src=\Javascript\Script.js type="text/javascript" lang="javascript">
+</script>
+
+</html>
