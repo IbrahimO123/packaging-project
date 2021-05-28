@@ -1,0 +1,57 @@
+/* style for the body of the html*/
+body,html {
+    background-color:white;
+    background-image: url("C:/Users/HP/Documents/Packaging-Project/Images/ban22.jpg");
+    background-position: center;
+    background-size: cover;
+}
+header {
+    text-align: center;
+    margin: auto 0;
+    background-color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    padding-bottom: 2px;
+    width: 100%;
+} 
+/*Style for navigation menu*/
+nav#top-menu{
+    width:100% ;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    background-color:white;
+}
+ #top-menu ul{
+    list-style: none;
+    width: 700px;
+    margin: 0 auto;
+    padding: 0;
+}
+ #top-menu ul li{
+    float: left;
+    margin: 0 ;
+    padding: 0;
+    width: 100px;
+    text-align: center;
+    position: relative;
+}
+#top-menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: red;
+    width: fit-content;
+}
+#top-menu ul li ul {
+    display: none;
+    width: 100px;
+    overflow: visible;
+    position: absolute;
+    text-align: center;
+}
+#top-menu ul li:hover ul {
+    display: block;
+    list-style: none;
+    background-color: black;
+    padding-bottom:5px white;
+} 

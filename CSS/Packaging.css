@@ -1,0 +1,293 @@
+        /*--------------------------------------------- The Site Presentation View -----------------------------*/
+        /*---------------------------------------------- body of the page-------------------------------------------- */
+        
+        body,
+        html {
+            
+            font-size: 0.96rem;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 5px;
+        }
+        
+        #Welcome {
+            float: left;
+            width: 50%;
+            overflow: hidden;
+            background-color: white;
+            margin-right: 10px;
+        }
+        
+        #Principles {
+            overflow: hidden;
+            background-color: white;
+            display: block;
+            max-width: 50%;
+        }
+        
+        h2 {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h3 {
+            text-align: center;
+            border: none;
+        }
+        /* ----------------------------------Style for Images in the page-------------------------------------------------*/
+        
+        .logo {
+            float: left;
+            max-width: 120px;
+            height: 45px;
+            margin: 2px 15px;
+        }
+        
+        .SKU {
+            width: 100%;
+            height: 500px;
+            float: left;
+        }
+        
+        .culture {
+            margin-right: 0 auto;
+            float: none;
+            display: block;
+            width: 750px;
+            height: 900px;
+        }
+        
+        /*---------------------------------------------------header-----------------------------------------------*/
+        
+        header {
+            text-align: center;
+            margin: auto 0;
+            background-color: red;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: block;
+            padding-bottom: 2px;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            right: 0;
+        }
+        /* ------------------------------------------------navigation bar for the page------------------------------ */
+        
+        nav#top-menu {
+            margin: 0;
+            padding: 0;
+            height: 50px;
+            background-color: white;
+        }
+        #top-menu ul {
+            list-style: none;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            padding: 0;
+            font-weight: bolder;
+        }
+        
+        #top-menu li {
+            margin: 0;
+            padding: 0;
+            width: 100px;
+            position: relative;
+            text-align: center;
+        }
+        
+        #top-menu ul li a {
+            display: block;
+            text-decoration: none;
+            color: red;
+        }
+        #top-menu ul li a:hover{
+            background-color: aquamarine;
+            transition: 0.9s;
+        }
+        #top-menu ul li ul {
+            display: none;
+        }
+        
+        #top-menu ul li ul a {
+            background-color: white;
+            border-bottom: 1px solid red;
+        }        
+        #top-menu ul li a:visited {
+            color: indigo;
+        }
+        
+        #top-menu ul li a:hover {
+            color: gold;
+        }
+        
+        #top-menu ul li a:active {
+            color: chartreuse;
+        }
+        
+        #top-menu ul li a:focus {
+            color: green;
+        }
+        
+        #top-menu ul li:active ul li {
+            color: indigo;
+        }
+        
+        #top-menu ul li:hover ul {
+            display: block;
+            list-style: none;
+            background-color: white;
+            padding-bottom: 5px white;
+        }
+
+        /*-------------------------Calculation Style----------------------------*/
+        
+        #form {
+            padding-top: 5px;
+            margin-left: 330px;
+            max-width: 50%;
+            text-align: center;
+            margin-top: 40px;
+            background-color: aquamarine;
+        }
+        #issue {
+            font-size: 15px;
+        }
+        datalist {
+            position: absolute;
+            background-color: lightgrey;
+            font-family: sans-serif;
+            font-size: 0.9rem;
+        }
+        option {
+            background-color: rosybrown;
+            padding: 4px;
+            margin-bottom: 1px;
+            cursor: pointer;
+        }
+        /*----------------------------------------------footer of the page-------------------------------------*/
+        
+        footer {
+            text-align: center;
+            font-size: smaller;
+            color: grey;
+            padding-bottom: 4px;
+            background-color: #59656F;
+            margin-top: 320px;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        #bottom a {
+            text-decoration: none;
+            color: gray;
+        }
+        
+        #news {
+            list-style-type: none;
+        }
+        
+        #news li a {
+            text-decoration: none;
+        }
+        /*-------------------------------style for calculator----------------------------------*/
+        
+        #body {
+            background-image: url("../Images/images.png");
+            background-repeat: repeat;
+        }
+        
+        #issues {
+            font-weight: bold;
+        }
+        
+        #textarea {
+            max-width: 90%;
+        }
+        .button {
+            margin: 15px;
+            
+        }
+        /*----------------------------------------------- Responsive Layout------------------------------------------ */
+        
+        @media screen and (max-width:1015px) {
+            #Welcome {
+                width: 100%;
+            }
+            #Principles {
+                overflow: unset;
+                max-width: 100%;
+            }
+            .SKU {
+                height: 100%;
+            }
+            .culture {
+                max-width: 100%;
+                height: 60%;
+            }
+            .logo{
+                height: 40px;
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+            header {
+                font-size: 8px;
+                
+            }
+            #form {
+                font-size: 13px;
+                max-width: 100%;
+                margin-left: 0;
+                color: black;
+            }
+
+            #top-menu .icon {
+                display: block;
+                float: left;
+                margin-top: 3px;
+                margin-bottom: 5px;
+                
+                
+            }
+        
+            #top-menu ul {
+                max-width: 800px;
+                margin: 5px;
+                padding: 0;
+                font-size: 10px;       
+            }
+            #top-menu ul li a:hover{
+                background-color: lime;
+                transition: 0.9s;
+            }
+            h3 {
+                background-color: tomato;
+                padding: 3px;
+            }
+            h4 {
+                padding: 3px;
+                background-color: teal;
+                text-align: center;
+            }
+            #top-menu ul li ul a {
+                color: black;
+                border: solid blue 4px;
+            }
+            .fill {
+                width: 200px;
+                height: 30px;
+            }
+            #issues {
+                font-size: 15px;
+                width: 95%;
+            }
+            .button {
+                font-size: 15px;
+                color:black;
+            
+            }
+            
+        }
