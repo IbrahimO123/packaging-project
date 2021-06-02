@@ -17,6 +17,7 @@ document.getElementById("result").innerHTML = "Number of bottles filled: " + bot
 document.getElementById("result2").innerHTML = " Actual HL drawn from Brew House: " + hlDrwan.toFixed(2) + "hL";
 document.getElementById("result3").innerHTML = " Gross Line Yield: " + Math.round(grossLineYield) + "%";
 document.getElementById("result4").innerHTML = " Down Time: " + Math.round(downTime) + "min";
+
 if ( bottlesFilled === bottlesFilled )
 {let issueOnLine = document.createElement("label");
 let texts = document.createTextNode("Issues that caused downtime in that hour run:");
@@ -32,6 +33,7 @@ justUsing.appendChild(listOut)
 let Issues = document.getElementById("issues")
 Issues.appendChild(issueOnLine);
 }
+
 if (a==="" && b ===""){
   alert("Fill in the values for both start and end of production hour")
  
