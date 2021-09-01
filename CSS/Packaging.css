@@ -240,8 +240,10 @@
                 border: 0;
             }
             header {
-                font-size: 8px;
-                
+                font-size: 8px;  
+            }
+            .heading{
+                font-size: 15px;
             }
             #form {
                 font-size: 13px;
