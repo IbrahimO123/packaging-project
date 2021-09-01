@@ -8,28 +8,7 @@
 <link href="Bootstrap/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
-    <script>
-        var images = [];
-        var i = 0
-            //changing time
-        var time = 10000
-            //Images path to change
-        images[0] = "Images/home.jpg"
-        images[1] = "Images/trophy.jpg"
-        images[2] = "Images/hero.jpg"
-        images[3] = "Images/budwieser.jpg"
-            // fuction to change the image
-        function changeImage() {
-            document.slide.src = images[i]
-            if (i < images.length - 1) {
-                i++;
-            } else {
-                i = 0
-            }
-            setTimeout("changeImage()", time)
-        }
-        window.onload = changeImage
-    </script>
+   
     <title>
         The Packaging Department Of International Breweries.
     </title>
@@ -81,32 +60,32 @@
                         <a href=\Machines\Unpacker-Machine.html target="-blank">Water Usage Ratio(WUR) &#x2264;0.7hl/hl</a>
                     </li>
                     <li>
-                        <a href=\Machines\Bottle-Washer_Machine.html target="-blank">Brewery Service Level(BSL) &#x2264;1.0</a>
+                        <a href=/Machines/Bottle-Washer_Machine.html target="-blank">Brewery Service Level(BSL) &#x2264;1.0</a>
                     </li>
                     <li>
-                        <a href=\Machines\Empty-Bottle-Inspector_Machine.html target="-blank">Packaging Extract Loss(PEL) &#x2264;0.8%</a>
+                        <a href=Machines/Empty-Bottle-Inspector_Machine.html target="-blank">Packaging Extract Loss(PEL) &#x2264;0.8%</a>
                     </li>
                     <li>
-                        <a href=\Machines\Filler-Machine.html target="-blank">Gross Line Yield(GLY) &#8805;83%</a>
+                        <a href=/Machines/Filler-Machine.html target="-blank">Gross Line Yield(GLY) &#8805;83%</a>
                     </li>
                 </ul>
             </li>
             <li><a>Suppliers & Customers</a>
                 <ul>
-                    <a href=Internal-Customers\Brew_House.html target="-blank">Brew House</a>
-                    <a href=Internal-Customers\Logistics.html target="-blank">Logistics</a>
-                    <a href=Internal-Customers\People.html target="-blank">People</a>
-                    <a href=Internal-Customers\Procurement.html target="-blank">Procurement</a>
-                    <a href=Internal-Customers\Technical_Services.html target="-blank">Technical Services</a>
+                    <a href=Internal-Customers/Brew_House.html target="-blank">Brew House</a>
+                    <a href=Internal-Customers/Logistics.html target="-blank">Logistics</a>
+                    <a href=Internal-Customers/People.html target="-blank">People</a>
+                    <a href=Internal-Customers/Procurement.html target="-blank">Procurement</a>
+                    <a href=Internal-Customers/Technical_Services.html target="-blank">Technical Services</a>
                 </ul>
             </li>
             <li><a>VPO Tools</a>
                 <ul>
-                    <a href=Internal-Customers\Brew_House.html target="-blank">5s</a>
-                    <a href=Internal-Customers\Logistics.html target="-blank">ATO</a>
-                    <a href=Internal-Customers\People.html target="-blank">SAM & LOTOTO</a>
-                    <a href=Internal-Customers\Procurement.html target="-blank">Food Safety</a>
-                    <a href=Internal-Customers\Technical_Services.html target="-blank">Problem Solving Tools</a>
+                    <a href=Internal-Customers/Brew_House.html target="-blank">5s</a>
+                    <a href=Internal-Customers/Logistics.html target="-blank">ATO</a>
+                    <a href=Internal-Customers/People.html target="-blank">SAM & LOTOTO</a>
+                    <a href=Internal-Customers/Procurement.html target="-blank">Food Safety</a>
+                    <a href=Internal-Customers/Technical_Services.html target="-blank">Problem Solving Tools</a>
                 </ul>
             </li>
             <li><a href=Online-Caculator\Online_Calculator.html type="page/html" target="-blank">Online Calculator</a></li>
@@ -119,7 +98,7 @@
     <div id="Welcome"><span><h3>Welcome Speech by the  Packaging Manager (PKM) </h3></span>Welcome to the Packaging department of International Brewery Plc. International Brewery is a subsidary of Ab-Inbev group of company and they are currently four brewery in the country
         owned by Ab-&nbsp;Inbev.There are also some other offices, warehouses in the country also owned by Ab-&nbsp;Inbev, and the head-quarter is in Lagos. Is a great pleasure having you here, and we hope you enjoy your time and find what you are looking
         for.
-        <img class="SKU" src="Images\home.jpg" name="slide" alt="Some of the SKU been produced by international brewery across all branches" title="Stock Keeping Unit (SKU:Hero, Budweiser, Trophy, Beta Malt, Grand Malt,etc)"> <br/>
+        <img class="SKU" src="Images/home.jpg" name="slide" alt="Some of the SKU been produced by international brewery across all branches" title="Stock Keeping Unit (SKU:Hero, Budweiser, Trophy, Beta Malt, Grand Malt,etc)"> <br/>
         <h4>Summary of the Packaging Department</h4>
         <div id="summary"> The Packaging Department is the largest section of the brewery in terms of people working in there, machines and every others terms related to, example for Onitsha, the packaging department consists of 178 permaanent staffs, 24 contractors. Having
             one Packaging manager(PKM),one Packaging Engineer(PKE), two unit managers, three maintenanace controllers (two for Mechanical and one for Automation and Control), six to seven team leaders and other team members, specialists and techinicians.
@@ -142,7 +121,7 @@
     <div id="Principles">
         <h3>Our Principles</h3>
         The priciples of the department is the same with the plant principles, which in turns is the same with the nation principles, in turns with the global principles, which we call our DREAM, PEOPLE, CULTURE and they are:<br/>
-        <img class="culture" src=Images\Slide1.jpg title="Ab-Inbev 10 Principles" alt="Image of Ab-inbev 10 principles">
+        <img class="culture" src=Images/Slide1.jpg title="Ab-Inbev 10 Principles" alt="Image of Ab-inbev 10 principles">
     </div>
     <!---------------------------------------- THE FOOTER OF THE PAGE----------------------------------->
     <footer class="clear">
@@ -157,6 +136,28 @@
   <script src="Bootstrap/popper.min.js" ></script>
   <script src=Bootstrap/bootstrap.min.js ></script>
   <script  src=Javascript/WritingScript.js ></script>
+  <script>
+    var images = [];
+    var i = 0
+        //changing time
+    var time = 10000
+        //Images path to change
+    images[0] = "Images/home.jpg"
+    images[1] = "Images/trophy.jpg"
+    images[2] = "Images/hero.jpg"
+    images[3] = "Images/budwieser.jpg"
+        // fuction to change the image
+    function changeImage() {
+        document.slide.src = images[i]
+        if (i < images.length - 1) {
+            i++;
+        } else {
+            i = 0
+        }
+        setTimeout("changeImage()", time)
+    }
+    window.onload = changeImage
+</script>
 </body>
 <!-- <script>
     function myFunction() {
